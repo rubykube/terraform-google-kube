@@ -15,7 +15,7 @@ module "k8s-cluster" {
   source           = "./modules/k8s-cluster"
   region           = "${var.region}"
   zone             = "${var.zone}"
-  cluster_name     = "production-${random_id.name.hex}"
+  cluster_name     = "${var.cluster_name}"
   machine_type     = "${var.node_type}"
   num_nodes        = "${var.num_nodes}"
 }
