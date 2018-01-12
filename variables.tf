@@ -12,6 +12,10 @@ variable "zone" {
   default = "europe-west1-b"
 }
 
+variable "credentials" {
+  type = "string"
+}
+
 variable "num_nodes" {
   default = "3"
 }
